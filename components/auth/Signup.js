@@ -5,7 +5,7 @@ import { SignUpWrapper } from './Signup.styles';
 import * as Icons from 'react-feather';
 
 function Signup() {
-  const [withEmail, setWithEmail] = useState(false);
+  const [withEmail, setWithEmail] = useState(true);
   return (
     <SignUpWrapper>
       <Spacer y={0.5} />
@@ -45,7 +45,7 @@ function Signup() {
                 size='large'
                 className='login-form__btn'
                 style={{ background: '#0070F3', border: 'none' }}
-                onClick={() => setWithEmail(true)}
+                onClick={() => setWithEmail(false)}
               >
                 <Spacer x={1.5} />
                 Continue with Email
@@ -55,12 +55,10 @@ function Signup() {
           </>
         ) : (
           <>
-            <SignUpWithEmail />
+            <SignUpWithEmail setWithEmail={setWithEmail} />
           </>
         )}
       </div>
-
-      <Spacer y={0.5} />
 
       <div className='login-action'>
         <div className='nav'>

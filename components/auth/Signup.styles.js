@@ -10,6 +10,11 @@ export const SignUpWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    .signup-option{
+      font-weight:600;
+      color:#0070f3;
+      cursor:pointer;
+    }
     .login-form__actions {
       background: #fff;
       width: 259px;

@@ -3,7 +3,7 @@ import { Page, Text, Input, Spacer, Button, Link } from '@geist-ui/react';
 import * as Icons from 'react-feather';
 import { SignUpWrapper } from './Signup.styles';
 
-function SignUpWithEmail() {
+function SignUpWithEmail({ setWithEmail }) {
   return (
     <SignUpWrapper>
       <Spacer y={0.5} />
@@ -31,6 +31,14 @@ function SignUpWithEmail() {
           <Button type='secondary' size='large' className='login-form__btn'>
             Sign Up
           </Button>
+          <Spacer y={0.5} />
+
+          <Text as p onClick={() => setWithEmail(true)}>
+            {' '}
+            You can also use{' '}
+            <span className='signup-option'>GitHub, GitLab or Google</span> to
+            Signup
+          </Text>
         </div>
       </div>
 
