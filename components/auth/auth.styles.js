@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const LoginWrapper = styled.div`
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  height: 70vh;
+
+  height: 70vh !important;
   .login-form {
+    margin: 70px 0;
     width: 100% !important;
     display: flex;
     align-items: center;
@@ -21,10 +20,17 @@ export const LoginWrapper = styled.div`
     }
   }
 
-  .nav {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+.login-action{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display:flex;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content:center;
+   
+}
+  .nav {
+display:flex;
+    align-items: center !important;
+    justify-content:center;
     width: 1000px;
     height: 36.8px;
     margin: 14px auto;

@@ -51,11 +51,13 @@ function Login() {
 
       <Spacer y={0.5} />
 
-      <div className='nav'>
-        <Link to='/signup'>
-          {' '}
-          <a>Don't have an account? Sign Up</a>{' '}
-        </Link>
+      <div className='login-action'>
+        <div className='nav'>
+          <Link href='/signup'>
+            {' '}
+            <a>Don't have an account? Sign Up</a>{' '}
+          </Link>
+        </div>
       </div>
     </LoginWrapper>
   );
