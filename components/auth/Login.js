@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page, Text, Input, Spacer, Button, Link } from '@geist-ui/react';
-import { LoginWrapper } from './auth.styles';
+
+import { LoginWrapper } from './Login.styles';
 import * as Icons from 'react-feather';
 
 function Login() {

@@ -1,10 +1,11 @@
 import React from 'react';
+import Signup from '../components/auth/Signup';
 import Layout from '../components/Common/Layout';
 
 function signup() {
   return (
     <Layout>
-      <h1>signup</h1>
+      <Signup />
     </Layout>
   );
 }

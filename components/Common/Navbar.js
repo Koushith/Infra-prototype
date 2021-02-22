@@ -49,7 +49,10 @@ const Navbar = ({ toggleDarkMode }) => {
           <div className='actions'>
             <Text>Log In</Text>
             <Button auto type='success'>
-              Sign Up
+              <Link href='/signup' className='link'>
+                {' '}
+                <a className='link'>Sign Up</a>{' '}
+              </Link>
             </Button>
           </div>
         </div>
